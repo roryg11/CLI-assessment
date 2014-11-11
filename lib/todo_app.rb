@@ -5,6 +5,7 @@ class TodoApp < CommandLineApp
   end
 
   def run
+
     puts "Welcome"
     puts "'list' to list projects"
     puts "'create' to create a new project"
@@ -42,6 +43,12 @@ class TodoApp < CommandLineApp
         projects = projects.gsub!("#{input}", "")
 
       end
+      puts "Welcome"
+      puts "'list' to list projects"
+      puts "'create' to create a new project"
+      puts "'edit' to edit a project"
+      puts "Please enter the new project name:\n "
+
       input = gets.chomp
     end
 
